@@ -2,8 +2,11 @@ const Koa = require('koa');
 const views = require('koa-views');
 const path = require('path');
 const router = require('./routes');
+const bodyParser = require('koa-bodyparser');
 
 const app = new Koa();
+
+app.use(bodyParser());
 
 app.use(async (ctx, next) => {
   console.log(`${ctx.request.method} ${ctx.request.url}`);
