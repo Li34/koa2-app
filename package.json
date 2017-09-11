@@ -7,10 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "li34",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.5.0",
     "ejs": "^2.5.7",
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
