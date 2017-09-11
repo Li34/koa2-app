@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Nav = require('./nav');
+const Todo = require('./todo');
 
 mongoose.connect('mongodb://127.0.0.1:27017/koa2-app', function (err) {
   if (err) {
@@ -8,4 +9,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/koa2-app', function (err) {
   }
 });
 
-module.exports = {Nav};
+module.exports = {
+  Nav,
+  Todo,
+};
